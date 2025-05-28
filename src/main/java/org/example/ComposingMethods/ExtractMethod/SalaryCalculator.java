@@ -16,7 +16,7 @@ public class SalaryCalculator {
     private double calculateOvertimeBonus(){
         double overtimeBonus = 0;
         if(employee.getOvertimeHours() > 0)
-            overtimeBonus = employee.getBaseSalary() * employee.getOvertimeHours() * 1.5;
+            return employee.getBaseSalary() * employee.getOvertimeHours() * 1.5;
         return overtimeBonus;
     }
 
