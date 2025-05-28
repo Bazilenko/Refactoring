@@ -1,4 +1,9 @@
 package org.example.OrganizingData.ReplaceTypeCodeWithState;
 
-public class OrderStatus {
+import org.example.OrganizingData.ReplaceTypeCodeWithState.Order;
+
+public interface OrderStatus {
+    void proceed(Order order);
+    void cancel(Order order);
+    String getName();
 }
